@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "matriculas",
+            "otherEntityName": "matriculas",
+            "otherEntityRelationshipName": "cursos"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "nombreCurso",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180206142926",
+    "entityTableName": "cursos",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

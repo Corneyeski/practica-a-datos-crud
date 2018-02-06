@@ -1,0 +1,18 @@
+
+entity Alumnos {
+ 	nombreAlumno String
+}
+
+
+entity Cursos {
+	nombreCurso String
+}
+
+entity Matriculas {
+	inicio ZonedDateTime
+}
+
+relationship OneToMany {
+	Cursos{matriculas} to Matriculas,
+	Alumnos{matriculas} to Matriculas
+}

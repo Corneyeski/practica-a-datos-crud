@@ -1,0 +1,29 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "alumnos",
+            "otherEntityName": "alumnos",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "cursos",
+            "otherEntityName": "cursos",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "inicio",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20180206142927",
+    "entityTableName": "matriculas",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}
